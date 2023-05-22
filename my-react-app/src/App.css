@@ -1,0 +1,425 @@
+body {
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+.bg-grey {
+  background-color: #F1F3FF;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.global-container {
+  padding: 25px 10vw;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+.no-mp {
+  margin: 0;
+  padding: 0;
+}
+
+.link-no-decoration {
+  color: #000;
+  text-decoration: none;
+}
+
+.btn-success {
+  background: #5CB85F;
+  border-radius: 2px;
+  padding: 8px 12px;
+  border: none;
+  font-weight: 700;
+}
+
+
+/* Navbar */
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+#sidebar-toggle {
+  display: none;
+}
+
+.menu-toggle {
+  border: none;
+  background-color: transparent;
+}
+
+.menu-exit-toggle {
+  border: none;
+  background-color: transparent;
+}
+
+#offcanvasRight {
+  display: none;
+}
+.offcanvas-backdrop {
+  display: none;
+}
+
+/* Hero Section */
+#hero {
+  min-height: 500px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-top: 70px;
+}
+
+#hero__text {
+  margin-left: 10vw;
+  width: 40vw;
+}
+
+#hero p {
+  margin-right: 10vw;
+}
+
+#hero img {
+  align-self: end;
+  justify-self: end;
+  width: 50vw;
+  height: auto;
+  z-index: 1;
+}
+
+/* Section Our Services */
+#container-service {
+width: 70vw;
+margin: 100px 15vw 0;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+align-items: center;
+}
+
+#services ul li {
+list-style: none;
+background-repeat: no-repeat;
+background-position: left center;
+background-size: 24px;
+height: 24px;
+padding-left: 40px;
+display: flex;
+align-items: center;
+}
+
+/* Why Us */
+#why-us {
+  margin-top: 100px;
+}
+
+#why-us ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
+}
+
+#why-us .card {
+  border-radius: 8px;
+  min-height: 180px;
+  padding: 24px 24px;
+}
+
+#why-us img {
+  margin-bottom: 16px;
+}
+
+/* Testimoni */
+#testimonial {
+  margin-top: 100px;
+  align-items: center;
+}
+
+.testimonial-carousel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 40px;
+  grid-template-areas:
+    "carousel carousel"
+    "prev-btn next-btn";
+  gap: 24px;
+}
+
+.slick-list {
+  grid-area: carousel;
+}
+
+.slick-arrow {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  border: solid 1px #c4c4c4;
+  background-color: #fff;
+}
+.slick-arrow:hover {
+  transition: 0.3s;
+  border: #5cb85f;
+  background-color: #5cb85f;
+  color: #fff;
+}
+.slick-arrow:hover {
+  background-color: #a347a0;
+  filter: invert(1);
+  transition: 0.2s;
+}
+
+.slick-prev {
+  grid-area: prev-btn;
+  justify-self: end;
+  left: 0;
+}
+.slick-next {
+  grid-area: next-btn;
+  justify-self: start;
+  left: 0;
+  right: 0;
+}
+
+.testimonial-card {
+  width: 690px;
+  min-height: 270px;
+  height: fit-content;
+  margin: 0 16px;
+
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 70px 32px;
+
+  display: grid !important;
+  grid-template-columns: 120px auto;
+  align-items: center;
+  grid-template-areas:
+    ". star-rating"
+    "profile-pic testimonial-quote"
+    "profile-pic profile-name";
+}
+
+.testimonial-card img {
+  grid-area: profile-pic;
+  align-self: start;
+}
+
+.testimonial-card .rating-container {
+  grid-area: star-rating;
+}
+
+.testimonial-card p {
+  grid-area: testimonial-quote;
+}
+
+.testimonial-card span {
+  grid-area: profile-name;
+}
+
+/* Banner Section */
+#getting-started {
+  margin-top: 100px;
+}
+#getting-started > div {
+  padding: 64px 20vw;
+  min-height: 325px;
+  align-items: center;
+  border-radius: 13px;
+}
+
+#getting-started h1 {
+  text-align: center;
+}
+
+#getting-started p {
+  margin-bottom: 32px;
+  max-width: 460px;
+  text-align: center;
+}
+
+/* FAQ Section */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-button {
+  border: solid 1px #d4d4d4;
+  border-radius: 4px !important;
+  line-height: 20px;
+  color: #000;
+  padding: 18px 24px;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  margin: 100px 0 80px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 2fr;
+  gap: 80px;
+}
+
+/* Search */
+.result-card {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  width: 333px;
+
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.result-card > img {
+  height: 200px;
+}
+
+.no-result-text {
+  font-size: 20px;
+  color: rgb(86, 86, 86);
+}
+
+.car-data {
+  margin-bottom: 8px;
+}
+
+.search__box {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  margin-bottom: 100px;
+}
+.search__content {
+  z-index: 100;
+  width: 73%;
+  padding: 24px;
+  height: fit-content;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: -50px;
+}
+
+.btn.btn-search {
+  background: #5CB85F;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 5vh;
+  color: #ffffff;
+  margin-top: 36px;
+  font-size: 14px; 
+}
+
+.input-group {
+  width: 21%;
+}
+
+.input-group > .form-control,
+.input-group > .form-select {
+  border-radius: 3px !important;
+  position: relative;
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 0;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3c3c3c;
+}
+
+.item {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.form-control:hover,
+.form-control:focus,
+.form-select:hover,
+.form-select:focus {
+  border: 1px solid #5cb85f;
+  box-shadow: none;
+}
+
+.result-container {
+  text-align: -webkit-center;
+}
+.result {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  padding-top: 1%;
+  padding-right: 3%;
+  padding-left: 3%;
+  justify-content: space-around;
+  flex-flow: wrap;
+  text-align: left;
+  color: black;
+}
+
+@media only screen and (max-width: 576px) {
+  .global-container {
+      padding: 24px 16px;
+  }
+
+  .nav-list {
+      display: none;
+  }
+
+  #sidebar-menu {
+      display: block;
+  }
+
+  .title-why-us{
+      text-align: center;
+  }
+
+}
