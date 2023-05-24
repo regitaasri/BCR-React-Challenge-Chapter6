@@ -1,12 +1,12 @@
 import { useEffect } from "react"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
-import Faq from "./components/Home/Faq"
-import GettingStarted from "./components/Home/GettingStarted"
-import Services from "./components/Home/Services"
-import Testimonial from "./components/Home/Testimonial"
-import WhyUs from "./components/Home/WhyUs"
-import Nav from "./components/Nav"
+import Faq from "./components/Faq"
+import Services from "./components/Services"
+import Testimonial from "./components/Testimonial"
+import BannerSection from "./components/BennerSection"
+import WhyUs from "./components/WhyUs"
+import NavBar from "./components/NavBar"
 
 export default function Home() {
     useEffect(() => {
@@ -15,12 +15,12 @@ export default function Home() {
 
     return (
         <>
-            <Nav type="home" />
+            <NavBar type="home" />
             <Hero />
             <Services />
             <WhyUs />
             <Testimonial />
-            <GettingStarted />
+            <BannerSection />
             <Faq />
 
 
