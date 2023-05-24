@@ -3,15 +3,15 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Home from "./app/Home";
-import Search from "./app/Search";
+import Home from "./components/Home";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/cars" element={<Search />}></Route>
+        <Route path="/" element={<SearchBar />}></Route>
       </Routes>
     </BrowserRouter>
   );
